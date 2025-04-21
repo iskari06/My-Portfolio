@@ -1,0 +1,24 @@
+@use "./variable" as *;
+
+/* Slim the scrollbar */
+::-webkit-scrollbar {
+  width: 6px; /* Adjust the width */
+  height: 6px; /* For horizontal scrollbars */
+}
+
+/* Scrollbar track */
+::-webkit-scrollbar-track {
+  background: inherit;
+  border-radius: 10px;
+}
+
+/* Scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: #f7e6c8;
+  border-radius: 10px;
+}
+
+/* On hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #947e57;
+}

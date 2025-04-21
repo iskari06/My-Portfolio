@@ -6,6 +6,10 @@ import AboutMe from "../pages/AboutMe";
 import Socials from "../pages/Socials";
 import Works from "../pages/Works";
 
+export type SectionRefs = {
+  [key: string]: React.RefObject<HTMLElement | null>;
+};
+
 export interface IRoute {
 	key: string;
 	path: string;
