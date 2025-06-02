@@ -42,7 +42,7 @@ const MainLayout = () => {
                   <RouteElement />
                 ) : (
                   <Row className="flex justify-center">
-                    <Col className="w-full sm:w-11/12 md:w-10/12 lg:w-9/12 xl:w-8/12">
+                    <Col className="w-full sm:w-11/12 md:w-10/12 lg:w-9/12 xl:w-[90%]">
                       <RouteElement />
                     </Col>
                   </Row>
