@@ -6,7 +6,7 @@ export function TimelineDemo() {
 			title: "On-The-Job Training 2025",
 			content: (
 				<div>
-					<p className="mb-8 font-normal text-neutral-800 md:text-sm xl:text-lg dark:text-neutral-200">
+					<p className="mb-8 font-normal text-[#655b4b] md:text-sm xl:text-lg dark:text-[#f7e6c8]">
 						As a frontend developer at Davao City Water District, I built
 						responsive and user-friendly interfaces using ReactJS, TypeScript,
 						MobX, Tailwind CSS, and Ant Design, while collaborating through
@@ -49,7 +49,7 @@ export function TimelineDemo() {
 			title: "CET Day and Intramurals 2024",
 			content: (
 				<div>
-					<p className="mb-8 font-normal text-neutral-800 md:text-sm xl:text-lg dark:text-neutral-200">
+					<p className="mb-8 font-normal text-[#f7e6c8] md:text-sm xl:text-lg dark:text-[#f7e6c8]">
 						I am not only dedicated to my growth as a developer, but I also
 						actively engage in extracurricular activities. I’ve participated in
 						musical events, including winning Battle of the Bands and Vocal Solo
@@ -94,7 +94,7 @@ export function TimelineDemo() {
 			title: "Early 2024",
 			content: (
 				<div>
-					<p className="mb-8 font-normal text-neutral-800 md:text-sm xl:text-lg dark:text-neutral-200">
+					<p className="mb-8 font-normal text-[#f7e6c8] md:text-sm xl:text-lg dark:text-[#f7e6c8]">
 						I developed a full-stack ordering management system using Vite and
 						Vue for the frontend, with Pinia for state management to ensure a
 						responsive and organized user experience. The backend was powered by
@@ -124,7 +124,7 @@ export function TimelineDemo() {
 			title: "Intramurals 2023",
 			content: (
 				<div>
-					<p className="mb-8 font-normal text-neutral-800 md:text-sm xl:text-lg dark:text-neutral-200">
+					<p className="mb-8 font-normal text-[#f7e6c8] md:text-sm xl:text-lg dark:text-[#f7e6c8]">
 						I participated in the Arise and Sing competition, where I proudly
 						secured 1st place. This achievement not only highlighted my vocal
 						talent but also reflected my dedication, stage presence, and passion
