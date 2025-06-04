@@ -37,18 +37,18 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 			className="w-full bg-white dark:bg-transparent font-sans md:px-10"
 			ref={containerRef}
 		>
-			<div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-				<h1 className="main-font text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
+			<div className="max-w-7xl mx-7 py-10 px-4 md:px-8 lg:px-10">
+				<h1 className="special-gothic text-2xl md:text-6xl mb-4 text-black dark:text-white max-w-4xl">
 					My Journey as a Student
 				</h1>
-				<p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
+				<p className="special-gothic text-neutral-700 dark:text-neutral-300 text-base md:text-lg max-w-sm">
 					I've been on a journey of learning and growth as in Information
 					Technology student. Here are some of the key milestones and projects
 					that have shaped my path.
 				</p>
 			</div>
 
-			<div ref={ref} className="relative max-w-7xl mx-auto pb-20">
+			<div ref={ref} className="relative special-gothic max-w-7xl mx-7 pb-20">
 				{data.map((item, index) => (
 					<div
 						key={index}
@@ -63,8 +63,8 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 							</h3>
 						</div>
 
-						<div className="relative pl-20 pr-4 md:pl-4 w-full">
-							<h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
+						<div className="relative text-base pl-20 pr-4 md:pl-4 w-full">
+							<h3 className="md:hidden block text-3xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
 								{item.title}
 							</h3>
 							{item.content}{" "}
