@@ -73,7 +73,7 @@ const AboutMe = () => {
 					<p className="special-gothic mb-3 xs:mb-4 sm:mb-4 md:mb-5 lg:mb-6 mt-4 xs:mt-6 sm:mt-8 md:mt-12 lg:mt-16 text-2xl xs:text-lg sm:text-xl md:text-2xl lg:text-3xl text-center text-[#f7e6c8]">
 						About Me
 					</p>
-					<p className="special-gothic mx-10 mb-4 xs:mb-5 sm:mb-6 md:mb-8 lg:mb-10 text-base xs:text-sm sm:text-base md:text-lg lg:text-xl text-center text-[#f7e6c8] px-1 xs:px-2 sm:px-3 md:px-4 leading-relaxed">
+					<p className="special-gothic mx-10 mb-4 xs:mb-5 sm:mb-6 md:mb-8 lg:mb-10 text-base xs:text-sm sm:text-base md:text-lg lg:text-xl text-center text-[#655b4b] px-1 xs:px-2 sm:px-3 md:px-4 leading-relaxed">
 						I am a dedicated web and mobile app developer with a strong passion
 						for mastering programming languages such as React, Vite, Vue,
 						NextJS, Expo, Flutter and React Native. I use my expertise in
@@ -97,7 +97,7 @@ const AboutMe = () => {
 					<p className="special-gothic mb-4 xl:mb-6 2xl:mb-8 mt-32 xl:mt-40 2xl:mt-52 text-xl xl:text-2xl 2xl:text-3xl text-center text-[#f7e6c8]">
 						About Me
 					</p>
-					<p className="special-gothic mb-8 xl:mb-10 2xl:mb-12 text-lg xl:text-xl 2xl:text-2xl text-center text-[#f7e6c8] leading-relaxed xl:leading-relaxed 2xl:leading-loose">
+					<p className="special-gothic mb-8 xl:mb-10 2xl:mb-12 text-lg xl:text-xl 2xl:text-2xl text-center text-[#655b4b] leading-relaxed xl:leading-relaxed 2xl:leading-loose">
 						I am a dedicated web and mobile app developer with a strong passion
 						for mastering programming languages such as React, Vite, Vue,
 						NextJS, Expo, Flutter and React Native. I use my expertise in
