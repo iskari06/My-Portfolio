@@ -132,16 +132,16 @@ export function TimelineDemo() {
 						both personally and artistically, while representing my department
 						with pride.
 					</p>
-					<div className="flex md:grid-cols-3 gap-4 place-content-center">
+					<div className="flex flex-row gap-4 max-w-6xl mx-auto">
 						<img
 							src="/src/assets/images/works/compe.svg"
 							alt="Arise & Sing 2023"
-							className="w-full max-w-[180px] h-[220px] md:max-w-fit md:h-[312px] rounded-lg shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+							className="w-1/2 h-auto max-h-[300px] xs:max-h-[400px] sm:max-h-[500px] object-contain rounded-lg shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
 						/>
 						<img
 							src="/src/assets/images/works/compe2.svg"
 							alt="Arise & Sing 2023"
-							className="w-full max-w-[180px] h-[220px] md:max-w-fit md:h-[310px] rounded-lg shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+							className="w-1/2 h-auto max-h-[300px] xs:max-h-[400px] sm:max-h-[500px] object-contain rounded-lg shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
 						/>
 					</div>
 				</div>
