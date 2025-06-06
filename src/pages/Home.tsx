@@ -11,7 +11,7 @@ export const products = [
 	},
 	{
 		title: "Marina East",
-		thumbnail: "/src/assets/images/aboutme/me.svg",
+		thumbnail: "/src/assets/images/home/marina.png",
 	},
 	{
 		title: "Kuala Lumpur",
