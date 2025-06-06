@@ -91,30 +91,40 @@ export const HeroParallax = ({
 export const Header = () => {
 	return (
 		<div className="max-w-7xl relative mx-auto py-20 md:py-10 px-4 w-full  left-0 top-0">
-			<h1 className="special-gothic mx-7 md:mx-auto text-2xl md:text-7xl font-bold dark:text-white">
+			<h1 className="special-gothic mx-7 md:mx-auto text-2xl md:text-7xl font-bold dark:text-[#f7e6c8]">
 				Hello world! I'm
 				<br /> Christopher Lazaga
 			</h1>
-			<p className="special-gothic mx-7 md:mx-0 max-w-2xl text-base md:text-xl mt-4 dark:text-neutral-200">
+			<p className="special-gothic mx-7 md:mx-0 max-w-2xl text-base md:text-xl mt-4 dark:text-[#947e57]">
 				I am a recent Bachelor of Science in Information Technology graduate
 				from Holy Cross of Davao College, and a passionate web developer
 				dedicated to continuous learning and growth.
 			</p>
 			<div className="mt-5 mx-7 md:mx-auto flex flex-wrap gap-6">
-				<button className="relative inline-flex bg h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+				<a
+					href="https://github.com/iskari06"
+					target="_blank"
+					rel="noopener noreferrer"
+					className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+				>
 					<span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
 					<span className="inline-flex h-full w-full z-10 cursor-pointer items-center justify-center rounded-full bg-slate-950/80 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
 						<GithubOutlined className="mr-2" />
 						GitHub Profile
 					</span>
-				</button>
-				<button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+				</a>
+				<a
+					href="/RESUME.pdf"
+					target="_blank"
+					rel="noopener noreferrer"
+					className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+				>
 					<span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
 					<span className="inline-flex h-full w-full z-10 cursor-pointer items-center justify-center rounded-full bg-slate-950/80 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
 						<FileTextOutlined className="mr-2" />
 						Resume
 					</span>
-				</button>
+				</a>
 			</div>
 		</div>
 	);
