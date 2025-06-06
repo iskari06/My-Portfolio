@@ -1,5 +1,18 @@
 import { Timeline } from "../components/ui/timeline";
 
+import intro from "../assets/images/works/intro.svg";
+import dash from "../assets/images/works/dash.svg";
+import em from "../assets/images/works/em.svg";
+import tech from "../assets/images/works/tech.svg";
+import botbb from "../assets/images/works/botbb.svg"
+import cet2 from "../assets/images/works/cet2.svg"
+import cet from "../assets/images/works/cet.svg"
+import botb from "../assets/images/works/botb.svg"
+import oms from "../assets/images/home/oms.svg"
+import dashboard from "../assets/images/home/dashboard.svg"
+import compe from "../assets/images/works/compe.svg"
+import compe2 from "../assets/images/works/compe2.svg"
+
 export function TimelineDemo() {
 	const data = [
 		{
@@ -14,29 +27,29 @@ export function TimelineDemo() {
 					</p>
 					<div className="grid grid-cols-2 gap-4">
 						<img
-							src="/src/assets/images/works/intro.svg"
-							alt="startup template"
+							src={intro}
+							alt="OJT intro"
 							width={500}
 							height={500}
 							className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
 						/>
 						<img
-							src="/src/assets/images/works/dash.svg"
-							alt="startup template"
+							src={dash}
+							alt="Dashboard"
 							width={500}
 							height={500}
 							className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
 						/>
 						<img
-							src="/src/assets/images/works/em.svg"
-							alt="startup template"
+							src={em}
+							alt="Employee Master"
 							width={500}
 							height={500}
 							className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
 						/>
 						<img
-							src="/src/assets/images/works/tech.svg"
-							alt="startup template"
+							src={tech}
+							alt="Tech Stack"
 							width={500}
 							height={500}
 							className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
@@ -61,29 +74,29 @@ export function TimelineDemo() {
 					<div className="grid grid-cols-5 grid-rows-2 gap-4 max-w-6xl mx-auto">
 						{/* Top Left - Large Landscape (3 columns) */}
 						<img
-							src="/src/assets/images/works/botbb.svg"
-							alt="Main"
+							src={botbb}
+							alt="BOTBB"
 							className="col-span-2 w-31 h-32 md:col-span-2 md:row-span-1 md:w-full md:h-70 object-cover rounded-xl shadow-lg"
 						/>
 
 						{/* Top Right - Portrait (2 columns) */}
 						<img
-							src="/src/assets/images/works/cet2.svg"
-							alt="Side Portrait"
+							src={cet2}
+							alt="CET 2"
 							className="col-span-3 w-70 h-32 md:col-span-3 md:row-span-1 md:w-full md:h-70 object-cover rounded-xl shadow-lg"
 						/>
 
 						{/* Bottom Left - Square Cottage */}
 						<img
-							src="/src/assets/images/works/cet.svg"
-							alt="Bottom Left"
+							src={cet}
+							alt="CET"
 							className="col-span-3 w-70 h-32 md:col-span-3 md:row-span-1 md:w-full md:h-60 object-cover rounded-xl shadow-lg"
 						/>
 
 						{/* Bottom Right - Wide Landscape */}
 						<img
-							src="/src/assets/images/works/botb.svg"
-							alt="Bottom Right"
+							src={botb}
+							alt="Battle of the Bands"
 							className="col-span-2 w-31 h-32 md:col-span-2 md:row-span-1 md:w-full md:h-60 object-cover rounded-xl shadow-lg"
 						/>
 					</div>
@@ -103,15 +116,15 @@ export function TimelineDemo() {
 					</p>
 					<div className="grid grid-cols-2 gap-4">
 						<img
-							src="/src/assets/images/home/oms.svg"
-							alt="hero template"
+							src={oms}
+							alt="Order Management System"
 							width={500}
 							height={500}
 							className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
 						/>
 						<img
-							src="/src/assets/images/home/dashboard.svg"
-							alt="feature template"
+							src={dashboard}
+							alt="Dashboard"
 							width={500}
 							height={500}
 							className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
@@ -134,12 +147,12 @@ export function TimelineDemo() {
 					</p>
 					<div className="flex flex-row gap-4 max-w-6xl mx-auto">
 						<img
-							src="/src/assets/images/works/compe.svg"
+							src={compe}
 							alt="Arise & Sing 2023"
 							className="w-1/2 h-auto max-h-[300px] xs:max-h-[400px] sm:max-h-[500px] object-contain rounded-lg shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
 						/>
 						<img
-							src="/src/assets/images/works/compe2.svg"
+							src={compe2}
 							alt="Arise & Sing 2023"
 							className="w-1/2 h-auto max-h-[300px] xs:max-h-[400px] sm:max-h-[500px] object-contain rounded-lg shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
 						/>

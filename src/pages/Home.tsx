@@ -51,11 +51,11 @@ export const products = [
 		thumbnail: car,
 	},
 	{
-		title: "Editrix AI",
+		title: "Subway",
 		thumbnail: subway,
 	},
 	{
-		title: "SmartBridge",
+		title: "2024 Champs",
 		thumbnail: champs,
 	},
 ];
