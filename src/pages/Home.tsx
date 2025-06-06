@@ -7,11 +7,11 @@ export function HeroParallaxDemo() {
 export const products = [
 	{
 		title: "Seattle",
-		thumbnail: "/src/assets/images/aboutme/me 2.svg",
+		thumbnail: "/src/assets/images/aboutme/me2.svg",
 	},
 	{
 		title: "Marina East",
-		thumbnail: "/src/assets/images/home/marina.png",
+		thumbnail: "/marina.png",
 	},
 	{
 		title: "Kuala Lumpur",
@@ -28,7 +28,7 @@ export const products = [
 	},
 	{
 		title: "Glass House",
-		thumbnail: "/src/assets/images/aboutme/me 3.svg",
+		thumbnail: "/src/assets/images/aboutme/me3.svg",
 	},
 
 	{

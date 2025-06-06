@@ -27,12 +27,12 @@ export function DraggableCardDemo() {
 		},
 		{
 			title: "Glass House",
-			image: "/src/assets/images/aboutme/me 3.svg",
+			image: "/src/assets/images/aboutme/me3.svg",
 			className: "absolute top-[10%] right-[13%] rotate-[2deg]",
 		},
 		{
 			title: "Seattle :)",
-			image: "/src/assets/images/aboutme/me 2.svg",
+			image: "/src/assets/images/aboutme/me2.svg",
 			className: "absolute top-[25%] right-[15%] rotate-[-7deg]",
 		},
 		{
