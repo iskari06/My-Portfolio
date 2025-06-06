@@ -6,20 +6,37 @@ export function HeroParallaxDemo() {
 }
 export const products = [
 	{
-		title: "Moonbeam",
+		title: "Seattle",
 		thumbnail: "/src/assets/images/aboutme/me 2.svg",
 	},
 	{
-		title: "Cursor",
+		title: "Marina East",
 		thumbnail: "/src/assets/images/aboutme/me.svg",
 	},
 	{
-		title: "Rogue",
+		title: "Kuala Lumpur",
+		thumbnail: "/src/assets/images/aboutme/kl.svg",
+	},
+
+	{
+		title: "CET Day",
+		thumbnail: "/src/assets/images/works/cet.svg",
+	},
+	{
+		title: "Battle of the Bands Champion",
+		thumbnail: "/src/assets/images/works/botb.svg",
+	},
+	{
+		title: "Glass House",
 		thumbnail: "/src/assets/images/aboutme/me 3.svg",
 	},
 
 	{
-		title: "Editorially",
+		title: "Gardens by the Bay",
+		thumbnail: "/src/assets/images/aboutme/gbtb.svg",
+	},
+	{
+		title: "Universal studio",
 		thumbnail: "/src/assets/images/aboutme/car.svg",
 	},
 	{
@@ -27,31 +44,8 @@ export const products = [
 		thumbnail: "/src/assets/images/aboutme/subway.svg",
 	},
 	{
-		title: "Pixel Perfect",
-		thumbnail: "/src/assets/images/aboutme/gbtb.svg",
-	},
-
-	{
-		title: "Algochurn",
-		thumbnail: "/src/assets/images/aboutme/kl.svg",
-	},
-	{
-		title: "Order Management System",
-		thumbnail: "/src/assets/images/home/oms.svg",
-	},
-	{
-		title: "Tailwind Master Kit",
-		thumbnail: "/src/assets/images/home/dashboard.svg",
-	},
-	{
 		title: "SmartBridge",
-		thumbnail:
-			"https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
-	},
-	{
-		title: "Renderwork Studio",
-		thumbnail:
-			"https://aceternity.com/images/products/thumbnails/new/renderwork.png",
+		thumbnail: "/src/assets/images/works/champs.svg",
 	},
 ];
 
