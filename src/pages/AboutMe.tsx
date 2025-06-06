@@ -3,41 +3,49 @@ import {
 	DraggableCardContainer,
 } from "../components/ui/draggable-card";
 
+import kl from "../assets/images/aboutme/kl.svg";
+import gbtb from "../assets/images/aboutme/gbtb.svg";
+import subway from "../assets/images/aboutme/subway.svg";
+import car from "../assets/images/aboutme/car.svg";
+import me3 from "../assets/images/aboutme/me3.svg";
+import me2 from "../assets/images/aboutme/me2.svg";
+import me from "../assets/images/aboutme/me.svg";
+
 export function DraggableCardDemo() {
 	const items = [
 		{
 			title: "KL '25",
-			image: "/src/assets/images/aboutme/kl.svg",
+			image: kl,
 			className: "absolute top-[25%] left-[6%] rotate-[-5deg]",
 		},
 		{
 			title: "Supertree Grove",
-			image: "/src/assets/images/aboutme/gbtb.svg",
+			image: gbtb,
 			className: "absolute bottom-[20%] left-[20%] rotate-[-7deg]",
 		},
 		{
 			title: "Subway",
-			image: "/src/assets/images/aboutme/subway.svg",
+			image: subway,
 			className: "absolute top-[15%] left-[25%] rotate-[8deg]",
 		},
 		{
 			title: "Universal Exp",
-			image: "/src/assets/images/aboutme/car.svg",
+			image: car,
 			className: "absolute top-[40%] right-[10%] rotate-[10deg]",
 		},
 		{
 			title: "Glass House",
-			image: "/src/assets/images/aboutme/me3.svg",
+			image: me3,
 			className: "absolute top-[10%] right-[13%] rotate-[2deg]",
 		},
 		{
 			title: "Seattle :)",
-			image: "/src/assets/images/aboutme/me2.svg",
+			image: me2,
 			className: "absolute top-[25%] right-[15%] rotate-[-7deg]",
 		},
 		{
 			title: "Singapore '25",
-			image: "/src/assets/images/aboutme/me.svg",
+			image: me,
 			className: "absolute top-[30%] left-[35%] rotate-[4deg]",
 		},
 	];
