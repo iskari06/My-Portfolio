@@ -1,5 +1,16 @@
-"use client";
 import { HeroParallax } from "../components/ui/hero-parallax";
+
+// Import all your images at the top
+import me2 from "../assets/images/aboutme/me2.svg"; // Adjust path as needed
+import me from "../assets/images/aboutme/me.svg"; // Adjust path as needed
+import kl from "../assets/images/aboutme/kl.svg";
+import cet from "../assets/images/works/cet.svg";
+import botb from "../assets/images/works/botb.svg";
+import me3 from "../assets/images/aboutme/me3.svg";
+import gbtb from "../assets/images/aboutme/gbtb.svg";
+import car from "../assets/images/aboutme/car.svg";
+import subway from "../assets/images/aboutme/subway.svg";
+import champs from "../assets/images/works/champs.svg";
 
 export function HeroParallaxDemo() {
 	return <HeroParallax products={products} />;
@@ -7,45 +18,45 @@ export function HeroParallaxDemo() {
 export const products = [
 	{
 		title: "Seattle",
-		thumbnail: "/src/assets/images/aboutme/me2.svg",
+		thumbnail: me2,
 	},
 	{
 		title: "Marina East",
-		thumbnail: "/marina.png",
+		thumbnail: me,
 	},
 	{
 		title: "Kuala Lumpur",
-		thumbnail: "/src/assets/images/aboutme/kl.svg",
+		thumbnail: kl,
 	},
 
 	{
 		title: "CET Day",
-		thumbnail: "/src/assets/images/works/cet.svg",
+		thumbnail: cet,
 	},
 	{
 		title: "Battle of the Bands Champion",
-		thumbnail: "/src/assets/images/works/botb.svg",
+		thumbnail: botb,
 	},
 	{
 		title: "Glass House",
-		thumbnail: "/src/assets/images/aboutme/me3.svg",
+		thumbnail: me3,
 	},
 
 	{
 		title: "Gardens by the Bay",
-		thumbnail: "/src/assets/images/aboutme/gbtb.svg",
+		thumbnail: gbtb,
 	},
 	{
 		title: "Universal studio",
-		thumbnail: "/src/assets/images/aboutme/car.svg",
+		thumbnail: car,
 	},
 	{
 		title: "Editrix AI",
-		thumbnail: "/src/assets/images/aboutme/subway.svg",
+		thumbnail: subway,
 	},
 	{
 		title: "SmartBridge",
-		thumbnail: "/src/assets/images/works/champs.svg",
+		thumbnail: champs,
 	},
 ];
 
