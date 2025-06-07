@@ -27,7 +27,7 @@ const MainLayout = () => {
         </Row>
 
         {/* Main Content */}
-        <Content className="w-full min-h-screen font-bold text-lg flex-grow bg-transparent!">
+        <Content className="w-full min-h-screen font-bold text-lg flex-grow bg-black">
           {/* Map through routes to create sections */}
           {PageRoutes.map((route) => {
             const RouteElement = route.element;

@@ -70,7 +70,7 @@ const AboutMe = () => {
 			<div className="block xl:hidden min-h-screen">
 				{/* Text content - top on mobile/tablet */}
 				<div className="p-3 xs:p-4 sm:p-6 md:p-8 lg:p-10 flex flex-col justify-center min-h-[40vh] sm:min-h-[45vh] lg:min-h-[50vh]">
-					<p className="special-gothic mb-3 xs:mb-4 sm:mb-4 md:mb-5 lg:mb-6 mt-4 xs:mt-6 sm:mt-8 md:mt-12 lg:mt-16 text-2xl xs:text-lg sm:text-xl md:text-2xl lg:text-3xl text-center text-[#f7e6c8]">
+					<p className="special-gothic mb-3 xs:mb-4 sm:mb-4 md:mb-5 lg:mb-6 mt-4 xs:mt-6 sm:mt-8 md:mt-12 lg:mt-16 text-2xl xs:text-lg sm:text-xl md:text-2xl lg:text-5xl text-center text-[#f7e6c8]">
 						About Me
 					</p>
 					<p className="special-gothic mx-10 mb-4 xs:mb-5 sm:mb-6 md:mb-8 lg:mb-10 text-base xs:text-sm sm:text-base md:text-lg lg:text-xl text-center text-[#655b4b] px-1 xs:px-2 sm:px-3 md:px-4 leading-relaxed">
