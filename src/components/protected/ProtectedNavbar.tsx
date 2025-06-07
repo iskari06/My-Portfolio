@@ -36,13 +36,13 @@ const ProtectedNavbar = ({ sectionRefs }: ProtectedNavbarProps) => {
 
 	return (
 		<Row className="h-full w-full items-center justify-between">
-			{/* Left: Logo */}
-			<Col>
+			{/* Logo - Hidden on mobile */}
+			<Col className="hidden md:block">
 				<img src={Logo} alt="Logo" className="w-24 h-auto" />
 			</Col>
 
 			{/* Hamburger Menu for Mobile */}
-			<Col className="md:hidden">
+			<Col className="md:hidden ml-auto">
 				<button
 					onClick={() => setIsDrawerOpen(true)}
 					className="p-2 text-[#f7e6c8] hover:text-[#947e57] transition-colors"
@@ -74,7 +74,7 @@ const ProtectedNavbar = ({ sectionRefs }: ProtectedNavbarProps) => {
 				width="100%"
 				height="100vh"
 				className="md:hidden"
-				closeIcon={null} // Remove default close icon
+				closeIcon={null}
 				styles={{
 					body: {
 						padding: 0,
@@ -100,16 +100,24 @@ const ProtectedNavbar = ({ sectionRefs }: ProtectedNavbarProps) => {
 					×
 				</button>
 
-				<div className="flex flex-col space-y-6 py-4 h-full items-center justify-center">
-					{PageRoutes.map((route) => (
-						<button
-							key={route.key}
-							onClick={() => scrollToSection(route.key)}
-							className="special-gothic text-2xl text-[#f7e6c8] hover:text-[#947e57] transition-colors cursor-pointer bg-transparent border-none text-center px-6 py-2"
-						>
-							{route.name}
-						</button>
-					))}
+				<div className="flex flex-col h-full items-center justify-center">
+					{/* Logo in Drawer */}
+					<div className="mb-10">
+						<img src={Logo} alt="Logo" className="w-32 h-auto" />
+					</div>
+
+					{/* Navigation Links */}
+					<div className="flex flex-col space-y-6">
+						{PageRoutes.map((route) => (
+							<button
+								key={route.key}
+								onClick={() => scrollToSection(route.key)}
+								className="special-gothic text-2xl text-[#f7e6c8] hover:text-[#947e57] transition-colors cursor-pointer bg-transparent border-none text-center px-6 py-2"
+							>
+								{route.name}
+							</button>
+						))}
+					</div>
 				</div>
 			</Drawer>
 		</Row>

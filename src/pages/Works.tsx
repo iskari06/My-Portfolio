@@ -19,7 +19,7 @@ export function TimelineDemo() {
 			title: "On-The-Job Training 2025",
 			content: (
 				<div>
-					<p className="mb-8 font-normal text-[#655b4b] md:text-sm xl:text-lg dark:text-[#f7e6c8]">
+					<p className="mb-8 font-normal text-[#f7e6c8] md:text-sm xl:text-lg dark:text-[#f7e6c8]">
 						As a frontend developer at Davao City Water District, I built
 						responsive and user-friendly interfaces using ReactJS, TypeScript,
 						MobX, Tailwind CSS, and Ant Design, while collaborating through
