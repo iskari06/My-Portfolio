@@ -91,11 +91,11 @@ export const HeroParallax = ({
 export const Header = () => {
 	return (
 		<div className="max-w-7xl relative mx-auto py-20 md:py-10 px-4 w-full z-20 md:z-0 left-0 top-0">
-			<h1 className="special-gothic mx-7 md:mx-auto text-2xl md:text-7xl font-bold text-[#f7e6c8] dark:text-[#f7e6c8]">
+			<h1 className="special-gothic mx-7 md:mx-auto text-4xl md:text-7xl font-bold text-[#f7e6c8] dark:text-[#f7e6c8]">
 				Hello world! I'm
 				<br /> Christopher Lazaga
 			</h1>
-			<p className="special-gothic mx-7 md:mx-0 max-w-2xl text-base md:text-xl mt-4 text-[#947e57] dark:text-[#947e57]">
+			<p className="special-gothic mx-7 md:mx-0 max-w-2xl text-lg md:text-xl mt-4 text-[#947e57] dark:text-[#947e57]">
 				I am a recent Bachelor of Science in Information Technology graduate
 				from Holy Cross of Davao College, and a passionate web developer
 				dedicated to continuous learning and growth.
