@@ -53,7 +53,7 @@ const MainLayout = () => {
         </Content>
 
         {/* Footer */}
-        <Footer className="special-gothic text-white! text-center py-8 bg-transparent! select-none">
+        <Footer className="special-gothic !text-white text-center py-8 !bg-black select-none">
           Christopher Lazaga © {currentYear} All Rights Reserved.
         </Footer>
       </Layout>

@@ -1,17 +1,47 @@
 import { Timeline } from "../components/ui/timeline";
+import { InfiniteMovingCards } from "../components/ui/infinite-moving-cards";
 
 import intro from "../assets/images/works/intro.svg";
 import dash from "../assets/images/works/dash.svg";
 import em from "../assets/images/works/em.svg";
 import tech from "../assets/images/works/tech.svg";
-import botbb from "../assets/images/works/botbb.svg"
-import cet2 from "../assets/images/works/cet2.svg"
-import cet from "../assets/images/works/cet.svg"
-import botb from "../assets/images/works/botb.svg"
-import oms from "../assets/images/home/oms.svg"
-import dashboard from "../assets/images/home/dashboard.svg"
-import compe from "../assets/images/works/compe.svg"
-import compe2 from "../assets/images/works/compe2.svg"
+import botbb from "../assets/images/works/botbb.svg";
+import cet2 from "../assets/images/works/cet2.svg";
+import cet from "../assets/images/works/cet.svg";
+import botb from "../assets/images/works/botb.svg";
+import oms from "../assets/images/home/oms.svg";
+import dashboard from "../assets/images/home/dashboard.svg";
+import compe from "../assets/images/works/compe.svg";
+import compe2 from "../assets/images/works/compe2.svg";
+
+import bit from "../assets/images/certificate/bit.svg";
+import flutter from "../assets/images/certificate/flutter.svg";
+import fullstack from "../assets/images/certificate/fullstack.svg";
+import reactJS from "../assets/images/certificate/reactJS.svg";
+import tesda from "../assets/images/certificate/tesda.svg";
+
+const testimonials = [
+	{
+		certificate: bit,
+		title: "JAVASCRIPT TUTORIAL: LEARN JAVASCRIPT IN 1 HOUR",
+	},
+	{
+		certificate: fullstack,
+		title: "GETTING STARTED WITH FULL STACK DEVELOPMENT",
+	},
+	{
+		certificate: reactJS,
+		title: "REACTJS FOR BEGINNERS",
+	},
+	{
+		certificate: flutter,
+		title: "INTRODUCTION TO FLUTTER COURSE",
+	},
+	{
+		certificate: tesda,
+		title: "INTRODUCTION TO VISUAL GRAPHICS DESIGN",
+	},
+];
 
 export function TimelineDemo() {
 	const data = [
@@ -76,6 +106,8 @@ export function TimelineDemo() {
 						<img
 							src={botbb}
 							alt="BOTBB"
+							width={500}
+							height={500}
 							className="col-span-2 w-31 h-32 md:col-span-2 md:row-span-1 md:w-full md:h-70 object-cover rounded-xl shadow-lg"
 						/>
 
@@ -83,6 +115,8 @@ export function TimelineDemo() {
 						<img
 							src={cet2}
 							alt="CET 2"
+							width={500}
+							height={500}
 							className="col-span-3 w-70 h-32 md:col-span-3 md:row-span-1 md:w-full md:h-70 object-cover rounded-xl shadow-lg"
 						/>
 
@@ -90,6 +124,8 @@ export function TimelineDemo() {
 						<img
 							src={cet}
 							alt="CET"
+							width={500}
+							height={500}
 							className="col-span-3 w-70 h-32 md:col-span-3 md:row-span-1 md:w-full md:h-60 object-cover rounded-xl shadow-lg"
 						/>
 
@@ -97,6 +133,8 @@ export function TimelineDemo() {
 						<img
 							src={botb}
 							alt="Battle of the Bands"
+							width={500}
+							height={500}
 							className="col-span-2 w-31 h-32 md:col-span-2 md:row-span-1 md:w-full md:h-60 object-cover rounded-xl shadow-lg"
 						/>
 					</div>
@@ -148,11 +186,15 @@ export function TimelineDemo() {
 					<div className="flex flex-row gap-4 max-w-6xl mx-auto">
 						<img
 							src={compe}
+							width={500}
+							height={500}
 							alt="Arise & Sing 2023"
 							className="w-1/2 h-auto max-h-[300px] xs:max-h-[400px] sm:max-h-[500px] object-contain rounded-lg shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
 						/>
 						<img
 							src={compe2}
+							width={500}
+							height={500}
 							alt="Arise & Sing 2023"
 							className="w-1/2 h-auto max-h-[300px] xs:max-h-[400px] sm:max-h-[500px] object-contain rounded-lg shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
 						/>
@@ -168,10 +210,23 @@ export function TimelineDemo() {
 	);
 }
 
+export function InfiniteMovingCardsDemo() {
+	return (
+		<div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+			<InfiniteMovingCards
+				items={testimonials}
+				direction="right"
+				speed="slow"
+			/>
+		</div>
+	);
+}
+
 const Works = () => {
 	return (
 		<div className=" items-center">
 			<TimelineDemo />
+			<InfiniteMovingCardsDemo />
 		</div>
 	);
 };

@@ -42,7 +42,7 @@ const ProtectedNavbar = ({ sectionRefs }: ProtectedNavbarProps) => {
 			</Col>
 
 			{/* Hamburger Menu for Mobile */}
-			<Col className="md:hidden ml-auto">
+			<Col className="md:hidden ml-auto bg-inherit">
 				<button
 					onClick={() => setIsDrawerOpen(true)}
 					className="p-2 text-[#f7e6c8] hover:text-[#947e57] transition-colors"
@@ -112,7 +112,7 @@ const ProtectedNavbar = ({ sectionRefs }: ProtectedNavbarProps) => {
 							<button
 								key={route.key}
 								onClick={() => scrollToSection(route.key)}
-								className="special-gothic text-2xl text-[#f7e6c8] hover:text-[#947e57] transition-colors cursor-pointer bg-transparent border-none text-center px-6 py-2"
+								className="special-gothic text-2xl text-[#f7e6c8] hover:text-[#947e57] transition-colors cursor-pointer bg-inherit border-none text-center px-6 py-2"
 							>
 								{route.name}
 							</button>
