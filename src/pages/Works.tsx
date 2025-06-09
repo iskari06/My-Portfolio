@@ -19,6 +19,8 @@ import flutter from "../assets/images/certificate/flutter.svg";
 import fullstack from "../assets/images/certificate/fullstack.svg";
 import reactJS from "../assets/images/certificate/reactJS.svg";
 import tesda from "../assets/images/certificate/tesda.svg";
+import writing1 from "../assets/images/certificate/writing1.svg";
+import writing2 from "../assets/images/certificate/writing2.svg";
 
 const testimonials = [
 	{
@@ -41,7 +43,27 @@ const testimonials = [
 		certificate: tesda,
 		title: "INTRODUCTION TO VISUAL GRAPHICS DESIGN",
 	},
+	{
+		certificate: writing1,
+		title: "CAPSTONE PROJECT WRITING 1 WORKSHOP",
+	},
+	{
+		certificate: writing2,
+		title: "CAPSTONE PROJECT WRITING 2 WORKSHOP",
+	},
 ];
+
+export function InfiniteMovingCardsDemo() {
+	return (
+		<div className="h-[40rem] rounded-md flex flex-col antialiased bg-black dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+			<InfiniteMovingCards
+				items={testimonials}
+				direction="right"
+				speed="slow"
+			/>
+		</div>
+	);
+}
 
 export function TimelineDemo() {
 	const data = [
@@ -206,18 +228,6 @@ export function TimelineDemo() {
 	return (
 		<div className="relative w-full overflow-clip">
 			<Timeline data={data} />
-		</div>
-	);
-}
-
-export function InfiniteMovingCardsDemo() {
-	return (
-		<div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-			<InfiniteMovingCards
-				items={testimonials}
-				direction="right"
-				speed="slow"
-			/>
 		</div>
 	);
 }
