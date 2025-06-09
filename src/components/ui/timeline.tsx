@@ -38,10 +38,10 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 			ref={containerRef}
 		>
 			<div className="max-w-7xl mx-7 py-10 px-4 md:px-8 lg:px-10">
-				<h1 className="special-gothic text-2xl md:text-6xl mb-4 text-[#f7e6c8] dark:text-[#f7e6c8] max-w-4xl">
+				<h1 className="special-gothic text-3xl md:text-6xl mb-4 text-[#f7e6c8] dark:text-[#f7e6c8] max-w-4xl">
 					My Journey as a Student
 				</h1>
-				<p className="special-gothic text-[#655b4b] dark:text-[#655b4b] text-base md:text-lg max-w-sm">
+				<p className="special-gothic text-[#655b4b] dark:text-[#655b4b] text-xl md:text-lg max-w-sm">
 					I've been on a journey of learning and growth as in Information
 					Technology student. Here are some of the key milestones and projects
 					that have shaped my path.
