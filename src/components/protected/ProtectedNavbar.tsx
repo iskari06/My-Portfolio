@@ -1,4 +1,4 @@
-import { Col, Row, Drawer } from "antd";
+import { Col, Row, Drawer, ConfigProvider, theme } from "antd";
 import { MenuOutlined } from "@ant-design/icons";
 import Logo from "../../assets/images/Logo.svg";
 import { PageRoutes } from "../../routes/allRoutes";
@@ -45,7 +45,7 @@ const ProtectedNavbar = ({ sectionRefs }: ProtectedNavbarProps) => {
 			<Col className="md:hidden ml-auto bg-inherit">
 				<button
 					onClick={() => setIsDrawerOpen(true)}
-					className="p-2 text-[#f7e6c8] hover:text-[#947e57] transition-colors"
+					className="p-2 text-[#f7e6c8] hover:text-[#947e57] transition-colors bg-black/0!"
 				>
 					<MenuOutlined className="text-2xl" />
 				</button>
@@ -58,7 +58,7 @@ const ProtectedNavbar = ({ sectionRefs }: ProtectedNavbarProps) => {
 						<button
 							key={route.key}
 							onClick={() => scrollToSection(route.key)}
-							className="special-gothic text-xl text-[#f7e6c8] hover:text-[#947e57] transition-colors cursor-pointer bg-transparent border-none"
+							className="special-gothic text-xl text-[#f7e6c8] hover:text-[#947e57] bg-black/0! cursor-pointer border-none"
 						>
 							{route.name}
 						</button>
@@ -66,60 +66,72 @@ const ProtectedNavbar = ({ sectionRefs }: ProtectedNavbarProps) => {
 				</div>
 			</Col>
 
-			{/* Mobile Drawer */}
-			<Drawer
-				placement="right"
-				onClose={() => setIsDrawerOpen(false)}
-				open={isDrawerOpen}
-				width="100%"
-				height="100vh"
-				className="md:hidden"
-				closeIcon={null}
-				styles={{
-					body: {
-						padding: 0,
-						backgroundColor: "#0a0a0a",
-					},
-					content: {
-						backgroundColor: "#0a0a0a",
-					},
-					wrapper: {
-						height: "100vh",
-					},
-					mask: {
-						backgroundColor: "rgba(0, 0, 0, 0.9)",
+			{/* Mobile Drawer with Dark Theme */}
+			<ConfigProvider
+				theme={{
+					algorithm: theme.darkAlgorithm,
+					token: {
+						colorBgElevated: "#0a0a0a",
+						colorBgContainer: "#0a0a0a",
+						colorBgBase: "#0a0a0a",
 					},
 				}}
 			>
-				{/* Close Button */}
-				<button
-					onClick={() => setIsDrawerOpen(false)}
-					className="absolute top-6 right-6 p-2 text-[#f7e6c8] hover:text-[#947e57] transition-colors text-3xl z-50"
-					aria-label="Close menu"
+				<Drawer
+					placement="right"
+					onClose={() => setIsDrawerOpen(false)}
+					open={isDrawerOpen}
+					width="100%"
+					height="100vh"
+					className="md:hidden"
+					closeIcon={null}
+					styles={{
+						body: {
+							padding: 0,
+							backgroundColor: "#0a0a0a",
+						},
+						content: {
+							backgroundColor: "#0a0a0a",
+						},
+						wrapper: {
+							height: "100vh",
+							backgroundColor: "#0a0a0a",
+						},
+						mask: {
+							backgroundColor: "rgba(0, 0, 0, 0.9)",
+						},
+					}}
 				>
-					×
-				</button>
+					{/* Close Button */}
+					<button
+						onClick={() => setIsDrawerOpen(false)}
+						className="absolute top-6 right-6 p-2 text-[#f7e6c8] bg-black/0! hover:text-[#947e57] transition-colors text-3xl z-50"
+						aria-label="Close menu"
+					>
+						×
+					</button>
 
-				<div className="flex flex-col h-full items-center justify-center">
-					{/* Logo in Drawer */}
-					<div className="mb-10">
-						<img src={Logo} alt="Logo" className="w-32 h-auto" />
-					</div>
+					<div className="flex flex-col h-full items-center justify-center">
+						{/* Logo in Drawer */}
+						<div className="mb-10">
+							<img src={Logo} alt="Logo" className="w-32 h-auto" />
+						</div>
 
-					{/* Navigation Links */}
-					<div className="flex flex-col space-y-6">
-						{PageRoutes.map((route) => (
-							<button
-								key={route.key}
-								onClick={() => scrollToSection(route.key)}
-								className="special-gothic text-2xl text-[#f7e6c8] hover:text-[#947e57] transition-colors cursor-pointer bg-inherit border-none text-center px-6 py-2"
-							>
-								{route.name}
-							</button>
-						))}
+						{/* Navigation Links */}
+						<div className="flex flex-col space-y-6">
+							{PageRoutes.map((route) => (
+								<button
+									key={route.key}
+									onClick={() => scrollToSection(route.key)}
+									className="bg-black/0! special-gothic text-2xl text-[#f7e6c8] hover:text-[#947e57] transition-colors cursor-pointer border-none text-center px-6 py-2"
+								>
+									{route.name}
+								</button>
+							))}
+						</div>
 					</div>
-				</div>
-			</Drawer>
+				</Drawer>
+			</ConfigProvider>
 		</Row>
 	);
 };
