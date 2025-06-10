@@ -88,6 +88,8 @@ export const HeroParallax = ({
 	);
 };
 
+import resume from "../../assets/resume.pdf"
+
 export const Header = () => {
 	return (
 		<div className="max-w-7xl relative mx-auto py-20 md:py-10 px-4 w-full z-20 left-0 top-0">
@@ -114,7 +116,7 @@ export const Header = () => {
 					</span>
 				</a>
 				<a
-					href="/resume.pdf"
+					href={resume}
 					target="_blank"
 					rel="noopener noreferrer"
 					className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
