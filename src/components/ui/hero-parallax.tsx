@@ -8,6 +8,8 @@ import {
 	MotionValue,
 } from "framer-motion";
 
+import resume from "/resume.pdf";
+
 export const HeroParallax = ({
 	products,
 }: {
@@ -113,8 +115,8 @@ export const Header = () => {
 						GitHub Profile
 					</span>
 				</a>
-				<a
-					href="/resume.pdf"
+				<a 
+					href={resume}
 					target="_blank"
 					rel="noopener noreferrer"
 					className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
